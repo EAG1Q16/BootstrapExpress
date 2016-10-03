@@ -1,0 +1,18 @@
+{
+  "name": "Sprint0",
+  "description": "",
+  "main": "",
+  "authors": [
+    "tonimsc <tonimxc@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

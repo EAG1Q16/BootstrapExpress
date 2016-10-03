@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GeoFinder Admin</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="stylesheets/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="stylesheets/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">GeoFinder</a>
+        </div>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-toggleable-sm navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav list-group">
+                <li class="list-group-item">
+                    <a href="admin.html"><i class="fa fa-fw fa-bar-chart-o"></i>Estadísticas</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="aventurasadmin.html"><i class="fa fa-fw fa-wrench"></i>Aventuras</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="usuariosadmin.html"><i class="fa fa-fw fa-user"></i>Usuarios</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="index.html"><i class="fa fa-fw fa-edit"></i>Log out</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- Page content -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        Estadísticas
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li class="">
+                            <i class="fa fa-dashboard"></i> Información General
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-4">
+                    <div class="card card-red card-inverse">
+                        <div class="card-header card-red">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-globe fa-3x"></i>
+                                </div>
+                                <div class="col-xs-9 text-xs-right">
+                                    <div class="huge">26</div>
+                                    <div>Aventuras Nuevas</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer card-red">
+                            <a href="javascript:;">
+                                <span class="pull-xs-left">Detalles</span>
+                                <span class="pull-xs-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                    <div class="card card-green card-inverse">
+                        <div class="card-header card-green">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-3x"></i>
+                                </div>
+                                <div class="col-xs-9 text-xs-right">
+                                    <div class="huge">12</div>
+                                    <div>Aventuras</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer card-green">
+                            <a href="javascript:;">
+                                <span class="pull-xs-left">Detalles</span>
+                                <span class="pull-xs-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                    <div class="card card-yellow card-inverse">
+                        <div class="card-header card-yellow">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-user fa-3x"></i>
+                                </div>
+                                <div class="col-xs-9 text-xs-right">
+                                    <div class="huge">124</div>
+                                    <div>Usuarios</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer card-yellow">
+                            <a href="javascript:;">
+                                <span class="pull-xs-left">Detalles</span>
+                                <span class="pull-xs-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                            <div class="panel-heading">Aventuras Completadas</div>
+                        <div class="panel-bodyk">
+                            <div id="morris-area-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="javascripts/plugins/morris/raphael.min.js"></script>
+<script src="javascripts/plugins/morris/morris.min.js"></script>
+<script src="javascripts/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
